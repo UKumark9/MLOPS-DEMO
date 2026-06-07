@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Environment variables
+.env
+.env.local
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data — large files, raw data (keep folder structure via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Models — trained artifacts (keep folder structure via .gitkeep)
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.pb
+*.tflite
+*.joblib
+
+# MLflow / experiment tracking
+mlruns/
+mlartifacts/
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Coverage / testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
