@@ -29,6 +29,7 @@ ENV/
 # Data — large files, raw data (keep folder structure via .gitkeep)
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/*.dvc
 data/processed/*
 !data/processed/.gitkeep
 *.csv
