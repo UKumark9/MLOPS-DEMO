@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType File -Path \"d:\\\\Main\\\\MLOps-Demo\\\\data\\\\raw\\\\.gitkeep\" -Force)",
+      "PowerShell(New-Item -ItemType File -Path \"d:\\\\Main\\\\MLOps-Demo\\\\models\\\\.gitkeep\" -Force)",
+      "PowerShell(New-Item -ItemType File -Path \"d:\\\\Main\\\\MLOps-Demo\\\\src\\\\.gitkeep\" -Force)"
+    ]
+  }
+}
