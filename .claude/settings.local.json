@@ -3,7 +3,8 @@
     "allow": [
       "PowerShell(New-Item -ItemType File -Path \"d:\\\\Main\\\\MLOps-Demo\\\\data\\\\raw\\\\.gitkeep\" -Force)",
       "PowerShell(New-Item -ItemType File -Path \"d:\\\\Main\\\\MLOps-Demo\\\\models\\\\.gitkeep\" -Force)",
-      "PowerShell(New-Item -ItemType File -Path \"d:\\\\Main\\\\MLOps-Demo\\\\src\\\\.gitkeep\" -Force)"
+      "PowerShell(New-Item -ItemType File -Path \"d:\\\\Main\\\\MLOps-Demo\\\\src\\\\.gitkeep\" -Force)",
+      "Bash(python -m flake8 src/ --max-line-length=100)"
     ]
   }
 }
