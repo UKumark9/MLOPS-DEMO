@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
-import joblib, logging, sqlite3, json
+import joblib
+import logging
+import sqlite3
+import json
 from datetime import datetime
 
 app = FastAPI(title="Iris Classifier API")
@@ -41,6 +44,7 @@ def predict(data: IrisInput):
     logging.info(f"input={features[0]} prediction={pred}")
     log_to_db(data.dict(), pred)
     return {"prediction": pred, "label": label}
+
 
 @app.get("/health")
 def health(): return {"status": "ok"}
